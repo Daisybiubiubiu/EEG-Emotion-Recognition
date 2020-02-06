@@ -16,7 +16,7 @@ We select several continous frames and stack them togther as a 3D chunk. The lat
 
 #### Classifier: 3D-CNN
 The network architecture is as follows.     
-![6 Conv layers & 3 MaxPooling Layers & 1 Fc layer & SoftMax]( ./CWT/Figure/3D-CNN architecture.png "3D-CNN Architeture")
+![6 Conv layers & 3 MaxPooling Layers & 1 Fc layer & SoftMax]( https://github.com/Daisybiubiubiu/EEG-Emotion-Recognition/tree/master/CWT/Figure/3D-CNN_architecture.png "3D-CNN Architeture")
 
 #### About Code & Files
 We use matlab_preprocessed_data, which is excluded from this repo.  
