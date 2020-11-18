@@ -12,8 +12,9 @@ Time = 63;
 addpath('C:\Users\75196\Documents\GitHub\SchoolCourse\PatternRec\EmotionRec\deap\data_preprocessed_matlab')
 
 %% set parameters
-frameNum = 10;
+frameNum = 60;
 totalScale = 64;
+exScale = 32;
 wname = 'db4';
 
 %%
@@ -53,7 +54,7 @@ for participant = 1:Participant
             wcf = centfrq(wname);
             scal =  Fs * wcf./ f;           
             
-            coefs = cwt(data1, scal, wname);
+            coefs = cwt(data1, 1:totalScale, wname);
             
             % Figures
             % 3d Figure
@@ -72,8 +73,9 @@ for participant = 1:Participant
              fprintf('.');
             
         end
-        output2d = reshape(output,[Channel*totalScale,frameNum]);
-        for k = 1:Channel*totalScale
+        exoutput = output(:,8:39,:);
+        output2d = reshape(exoutput,[Channel*exScale,frameNum]);
+        for k = 1:Channel*exScale
             fprintf(fid, '%g,',output2d(k,:));
             fprintf(fid, '\n');
         end
