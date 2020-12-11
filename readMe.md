@@ -1,7 +1,7 @@
 ## 3D-CNN Model for EEG-based Emotion Recognition 
 ----
 This is a final project for my 2019 Winter course "Pattern Recognition" based on DEAP dataset.
-We preprocess original signal data via **CWT**(Continuous Wavelet Transform) and bulit a **3D-CNN** architecture as classifier, the accuracy of 'valence' label reaches 83.5%.
+We preprocess original signal data via **CWT**(Continuous Wavelet Transform) and bulit a **3D-CNN** architecture as classifier, the accuracy of 'valence' label reaches 84.34%.
 
 #### Data Preprocessing
 1.  CWT analysis  
